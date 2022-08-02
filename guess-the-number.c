@@ -27,8 +27,8 @@ int main () {
     
     while (1)
     {
-        if(totalGuesses > tries){
-            printf("You ran out of guesses, better luck next time."); break;
+        if(totalGuesses > (tries - 1)){
+            printf("You ran out of guesses, better luck next time. The number was %d", numToGuess); break;
         }
 
         printf("Guess a number (1 - 100) \n");
